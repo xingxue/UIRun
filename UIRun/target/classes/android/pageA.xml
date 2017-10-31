@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!--locator of page map info -->
+
+    <page pageName="loginPage">  
+        <!--Locator lists -->  
+        <locator type="id"  value="username">登录用户名</locator>  
+        <locator type="id"  value="password">登录密码</locator>  
+        <locator type="xpath"  value=".//*[@id='form']/button">登录确认按钮</locator>  
+    </page>  
+
+</map>

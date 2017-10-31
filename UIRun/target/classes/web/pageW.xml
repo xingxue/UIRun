@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+
+	<!--小说平台 -->
+    <page pageName="loginPage">  
+        <!--登陆页面 -->  
+        <locator type="id"  value="username">登录用户名</locator>  
+        <locator type="id"  value="password">登录密码</locator>  
+        <locator type="xpath"  value=".//*[@id='form']/button">登录确认按钮</locator> 
+        <locator type="className"  value="msg_info">登录提示信息</locator>  
+    </page> 
+    
+    
+    <!-- 英语帮帮糖 --> 
+    <page pameName="loginPageEnglish">
+        <!-- 总页面 -->
+        <locator type="xpath"  value="html/body/div[1]/div[1]/form/div[1]/div/div/input">英语登录用户名</locator>  
+        <locator type="xpath"  value="html/body/div[1]/div[1]/form/div[2]/div/div/input">英语登录密码</locator>  
+        <locator type="xpath"  value="html/body/div[1]/div[1]/div[2]/button">英语登录确认按钮</locator> 
+        <locator type="xpath"  value="html/body/div[3]/div/p">英语退出登陆成功</locator>
+        <locator type="className"  value="el-message__group">英语账号异常</locator>
+        <locator type="className"  value="el-checkbox__inner">记住密码按钮</locator>
+
+        
+    </page>
+    <page pameName="FirstPageEnglish">
+        <!-- 英语棒棒糖首页 -->
+        <locator type="xpath"  value="html/body/div[1]/div[1]/div[2]/strong">英语首页用户名</locator>  
+        <locator type="xpath"  value="html/body/div[1]/div[1]/div[2]/ul/li[2]">英语退出登陆</locator> 
+        <locator type="xpath"  value="html/body/div[3]/div/div[3]/button[2]">英语确认退出登陆</locator> 
+        <locator type="xpath"  value="html/body/div[3]/div/div[3]/button[1]">英语取消退出登陆</locator>
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[1]/ul/li[1]/ul/li[1]">英语助教管理</locator>  
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[1]/ul/li[1]/ul/li[2]">英语班级群管理</locator> 
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[1]/ul/li[2]/ul/li">英语订单信息</locator> 
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[2]/div[2]/i">英语搜索按钮</locator> 
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[2]/div[2]/input">英语搜索框</locator>
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/input">英语搜索分类</locator>
+        <locator type="className"  value="el-pagination__total">英语页面数据条数</locator>   
+    </page>
+    <page pameName="TeacherPageEnglish">
+        <!-- 英语棒棒糖助教管理页面 -->
+        <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[1]/span">助教ID</locator>
+         <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[2]/span">助教昵称</locator>
+          <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[3]/span">助教微信</locator>
+        <locator type="className"  value="el-table_1_column_11">助教助教ID内容</locator>  
+         <locator type="className"  value="el-table_1_column_12">助教助教昵称内容</locator>  
+          <locator type="className"  value="el-table_1_column_10">助教助教微信内容</locator>  
+    </page>
+    
+     <page pameName="ClassPageEnglish">
+        <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[1]/span">助教ID</locator>
+         <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[2]/span">助教名称</locator>
+          <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[3]/span">群ID</locator>
+          <locator type="xpath"  value="html/body/div[3]/div/div[1]/ul/li[4]/span">群名称</locator>
+        <locator type="className"  value="el-table_1_column_19">班级群ID内容</locator>  
+         <locator type="className"  value="el-table_1_column_20">班级群名称内容</locator>  
+          <locator type="className"  value="el-table_1_column_21">班级助教ID内容</locator>  
+           <locator type="className"  value="el-table_1_column_22">班级助教昵称内容</locator>   
+    </page>
+    
+    <page pameName="OrdersPageEnglish">
+        <locator type="xpath"  value="html/body/div[2]/div/div[1]/ul/li[1]">订单流水号</locator>
+         <locator type="xpath"  value="html/body/div[2]/div/div[1]/ul/li[2]">用户昵称</locator>
+        <locator type="className"  value="el-table_1_column_28">订单流水号内容</locator>  
+         <locator type="className"  value="el-table_1_column_33">用户昵称内容</locator>    
+          <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[4]/div[2]/i">英语搜索按钮</locator> 
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[4]/div[2]/input">英语搜索框</locator>
+        <locator type="xpath"  value="html/body/div[1]/div[2]/div[2]/div[4]/div[1]/div[1]/input">英语搜索分类</locator>
+         <locator type="className"  value="el-pagination__total">英语页面数据条数</locator>
+    </page>
+
+</map>

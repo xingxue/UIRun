@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9955" started-at="2017-09-30T04:03:09Z" finished-at="2017-09-30T04:03:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9955" started-at="2017-09-30T04:03:09Z" finished-at="2017-09-30T04:03:19Z">
+      <class name="hunwater.NewTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:hunwater.NewTest@42e26948]" name="beforeClass" is-config="true" duration-ms="8180" started-at="2017-09-30T12:03:09Z" finished-at="2017-09-30T12:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f()[pri:0, instance:hunwater.NewTest@42e26948]" name="f" duration-ms="1320" started-at="2017-09-30T12:03:17Z" finished-at="2017-09-30T12:03:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:hunwater.NewTest@42e26948]" name="afterClass" is-config="true" duration-ms="432" started-at="2017-09-30T12:03:18Z" finished-at="2017-09-30T12:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- hunwater.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

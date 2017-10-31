@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+<!-- 英语棒棒糖数据 -->
+    <!-- 登陆数据 -->
+    <parameter name="userName_E" value="18210099333" />  
+    <parameter name="userNameNull_E" value="" />  
+    <parameter name="userNameFormatError_E" value="186" />  
+    <parameter name="userNameError_E" value="18686868686" />  
+    <parameter name="pwd_E" value="yz19910571" />  
+    <parameter name="pwdNull_E" value="" />  
+    <parameter name="pwdError_E" value="98765432" />
+    <parameter name="pwdFormatError_E" value="111" /> 
+    
+  <test name="登录功能" preserve-order="true">
+    <classes>
+      <class name="englishLolly.LoginTest">
+      <methods>
+
+                    <include name="pwdNull" />
+					<include name="loginUser" />
+					<include name="logout" /> 
+					<include name="loginUserPhoneNull" /> 
+					<include name="loginUserPhoneError" />
+					<include name="loginUserPhoneFormatError" />
+					<include name="pwdError" />
+					<include name="pwdFormatError" />     
+					<include name="pwdRemenber1" />
+					<include name="pwdRemenber2" />
+
+				</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>  
+        <listener class-name="tool.RetryListener"></listener> 
+</listeners> 
+
+</suite> <!-- Suite -->

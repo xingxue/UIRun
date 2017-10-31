@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+<!-- 英语棒棒糖数据 -->
+    <!-- 登陆数据 -->
+    <parameter name="userName_E" value="18210099333" />   
+    <parameter name="pwd_E" value="yz19910571" /> 
+     <parameter name="searchData_ID" value="4" /> 
+      <parameter name="searchData_nicheng" value="测试" /> 
+       <parameter name="searchData_weixin" value="ceshi" />  
+       <parameter name="searchID_qun" value="5" /> 
+       <parameter name="searchName_qun" value="英语" />  
+       <parameter name="searchData_user" value="雪糕" /> 
+
+    
+  <test name="搜索功能" preserve-order="true">
+    <classes>
+      <class name="englishLolly.SearchTest">
+      <methods>
+      
+      <!-- 
+
+                    <include name="searchZJID" />
+					<include name="searchZJNC" />
+					<include name="searchZJWX" /> 
+					<include name="searchClassZJWX" />       
+					<include name="searchClassZJNC" /> 
+					<include name="searchClassID" />       
+					<include name="searchClassName" /> 
+					<include name="searchOrderYHNC" />  
+					      -->
+					
+
+					 
+				<include name="searchOrderYHNC" />      
+				
+
+				</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>  
+        <listener class-name="tool.RetryListener"></listener> 
+</listeners> 
+
+</suite> <!-- Suite -->
